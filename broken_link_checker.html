@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Broken Link Checker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Broken Link Checker</h1>
+        <form id="brokenLinkForm">
+            <div class="form-group">
+                <label for="siteUrl">Enter the URL of the site:</label>
+                <input type="url" class="form-control" id="siteUrl" required>
+            </div>
+            <div class="form-group">
+                <label for="checkOption">Select an option:</label>
+                <select class="form-control" id="checkOption">
+                    <option value="subdomain">Subdomain</option>
+                    <option value="domain">Domain</option>
+                    <option value="path">Path</option>
+                    <option value="exact">Exact URL</option>
+                </select>
+            </div>
+            <button type="button" class="btn btn-primary" id="checkButton">Check Broken Link</button>
+        </form>
+        <div id="result" class="mt-4"></div>
+    </div>
+    <script src="broken_link_checker.js"></script>
+</body>
+</html>
